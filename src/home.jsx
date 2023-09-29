@@ -1,7 +1,9 @@
 import About from "./About";
 import Services from "./Services";
+import Features from "./Features";
 import { Link } from "react-router-dom";
-
+import Testimonials from "./Testimonials";
+import Footer from "./footer";
 const Home = () => {
   return (
     <>
@@ -11,22 +13,23 @@ const Home = () => {
         <div className=" hero-img container pt-10 mx-auto flex flex-col items-between md:flex-row ">
           <div className="left px-4   ">
 
-            <h1 className="text-white text-4xl  max-w-3xl font-bold">Introducing New tech,
+            <h1 className="text-white text-4xl  text-center max-w-3xl font-bold">Introducing New tech,
               A Cutting-edge Technology</h1>
-            <p className="text-base text-white pt-6 pb-6 leading-loose">
+            <p className="text-base  text-center md:text-left text-white pt-6 pb-6 leading-loose">
               We are on a mission to create Products that change the way people live,
               Passionate about creating products that enhances human experience
               Connecting and bridging tech space. We are dedicated to pushing the boundaries
               of what is possible through innovation.  </p>
 
-            <Link to="/hero" className="  text-base p
-px-3 py-2 rounded-md  bg-lightBlue text-white  ">
-              <button className=" ">Learn more</button> </Link>
+            <Link to="/hero" className="  text-l rounded-3xl  
+px-2 py-2 rounded-md  bg-lightBlue text-white  ">
+              <button className="/#A ">Learn more</button> </Link>
 
           </div>
           <div className="right   ">
             <img src="/heroimage.png" alt="heoimage" className=" himage   -translate-3 pt-6 md:mx-20 md:p  w={700px}" />
           </div>
+
 
 
         </div>
@@ -37,7 +40,7 @@ px-3 py-2 rounded-md  bg-lightBlue text-white  ">
 
       <section className="services py-10 " id="Features">
         <h3 className=" text-center font-bold text-xl my-10 text-darkBlue ">Why Choose Us</h3>
-        <div className=" container bg-white grid mx-auto py-5 myservices md:grid-cols-3 gap-10">
+        <div className=" container bg-white grid mx-auto py-5 x  myservices md:grid-cols-3 gap-10">
 
 
 
@@ -86,10 +89,24 @@ px-3 py-2 rounded-md  bg-lightBlue text-white  ">
         <About/>
         </section>
 
-        <section className="  Services py-6  " id="Serbices">
+        <section className="  Services py-6  " id="Services">
         <Services/>
         </section>
+        <h3 className=" text-center font-bold text-3xl mt-10 text-darkBlue ">Awesome Features</h3>
+<div className="mx-auto  mb-20 w-[100px] border border-1 border-lightBlue"></div>
+        
+        <section className="  Features py-6  " id="Features">
+        <Features/>
+        </section>
 
+
+        <section className="  Testimonials  py-6  " id="Testimonials">
+        <Testimonials/>
+        </section>
+
+        <section className="  Testimonials  py-6  " id="Testimonials">
+        <Footer/>
+        </section>
 
 
 
